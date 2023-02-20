@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="01699f16-08be-47fa-955d-b27641281f87" name="java_interview_course" url="jdbc:h2:file:~/h2/java_interview_course" driverClass="org.h2.Driver" />
+    </data-sources>
+  </component>
+</project>
