@@ -19,7 +19,7 @@ public class Student {
         @Column(name = "name")
         private String name;
 
-        private int mark;
+        private int age;
 
 
 
@@ -28,7 +28,7 @@ public class Student {
 
         public Student(String name, int mark) {
             this.name = name;
-            this.mark = mark;
+            this.age = mark;
         }
 
 
@@ -45,12 +45,12 @@ public class Student {
             this.name = name;
         }
 
-        public int getMark() {
-            return mark;
+        public int getAge() {
+            return age;
         }
 
-        public void setMark(int mark) {
-            this.mark = mark;
+        public void setAge(int mark) {
+            this.age = mark;
         }
 
 
@@ -59,7 +59,7 @@ public class Student {
             return "models.Student{" +
                     "id=" + id +
                     ", name='" + name + '\'' +
-                    ", mark=" + mark +
+                    ", mark=" + age +
                     '}';
         }
     }
