@@ -14,11 +14,11 @@ public class StudentRepositoryImpl implements StudentRepository {
 
         private final AtomicLong identity = new AtomicLong(0);
 
-        public List<Student> findAll() {
+        public static List<Student> findAll() {
             return new ArrayList<>(studentMap.values());
         }
 
-        public Student findById(long id) {
+        public static Student findById(long id) {
             return studentMap.get(id);
         }
 
