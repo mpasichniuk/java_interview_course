@@ -11,15 +11,15 @@ public class BasicListener implements ServletContextListener {
 
         @Override
         public void contextInitialized(ServletContextEvent sce) {
-            StudentRepository studentRepository = new StudentRepository();
-            studentRepository.insert(new Student("Mary"));
-            studentRepository.insert(new Student("Anton"));
-            studentRepository.insert(new Student("Ivan"));
-            studentRepository.insert(new Student("Kiril"));
-            studentRepository.insert(new Product("Yulia));
+            StudentRepository studentRepository = new StudentRepositoryImpl();
+            studentRepository.insert(new Student("Mary", 1));
+            studentRepository.insert(new Student("Anton", 4));
+            studentRepository.insert(new Student("Ivan", 6));
+            studentRepository.insert(new Student("Kiril", 9));
+            studentRepository.insert(new Student("Yulia", 12));
             sce.getServletContext().setAttribute("productRepository", studentRepository);
         }
 
     }
 
-}
+
